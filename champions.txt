@@ -1,0 +1,109 @@
+2022-11-09 19:19:20,010 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,011 - rio - INFO - =================================== Legends ====================================
+2022-11-09 19:19:20,011 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,011 - rio - DEBUG - NIP [Wins: 3 / 6 | 50.00%] [Net Wins: 0] [Elo: 1031]
+2022-11-09 19:19:20,012 - rio - DEBUG - FAZE [Wins: 3 / 6 | 50.00%] [Net Wins: 0] [Elo: 1060]
+2022-11-09 19:19:20,012 - rio - DEBUG - VITALITY [Wins: 7 / 14 | 50.00%] [Net Wins: 0] [Elo: 1094]
+2022-11-09 19:19:20,012 - rio - DEBUG - ENCE [Wins: 5 / 8 | 62.50%] [Net Wins: 2] [Elo: 1108]
+2022-11-09 19:19:20,012 - rio - DEBUG - BIG [Wins: 8 / 14 | 57.14%] [Net Wins: 2] [Elo: 1133]
+2022-11-09 19:19:20,012 - rio - DEBUG - SPROUT [Wins: 4 / 8 | 50.00%] [Net Wins: 0] [Elo: 1170]
+2022-11-09 19:19:20,013 - rio - DEBUG - BNE [Wins: 7 / 12 | 58.33%] [Net Wins: 2] [Elo: 1212]
+2022-11-09 19:19:20,013 - rio - DEBUG - LIQUID [Wins: 5 / 9 | 55.56%] [Net Wins: 1] [Elo: 1220]
+2022-11-09 19:19:20,013 - rio - DEBUG - NAVI [Wins: 6 / 8 | 75.00%] [Net Wins: 4] [Elo: 1271]
+2022-11-09 19:19:20,013 - rio - DEBUG - SPIRIT [Wins: 7 / 10 | 70.00%] [Net Wins: 4] [Elo: 1325]
+2022-11-09 19:19:20,013 - rio - DEBUG - MOUZ [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1361]
+2022-11-09 19:19:20,014 - rio - DEBUG - HEROIC [Wins: 8 / 10 | 80.00%] [Net Wins: 6] [Elo: 1368]
+2022-11-09 19:19:20,014 - rio - DEBUG - FNATIC [Wins: 9 / 14 | 64.29%] [Net Wins: 4] [Elo: 1372]
+2022-11-09 19:19:20,014 - rio - DEBUG - FURIA [Wins: 9 / 11 | 81.82%] [Net Wins: 7] [Elo: 1378]
+2022-11-09 19:19:20,014 - rio - DEBUG - C9 [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1379]
+2022-11-09 19:19:20,014 - rio - DEBUG - OUTSIDERS [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1418]
+2022-11-09 19:19:20,014 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,014 - rio - INFO - =================================== ROUND 1 ====================================
+2022-11-09 19:19:20,015 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,015 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,015 - rio - INFO - ----------------------------- ROUND 1: C9 vs MOUZ ------------------------------
+2022-11-09 19:19:20,015 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,015 - rio - INFO - C9 [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1379]
+2022-11-09 19:19:20,015 - rio - INFO - MOUZ [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1361]
+2022-11-09 19:19:20,015 - rio - DEBUG - Looking out who would win out of C9 and MOUZ...
+2022-11-09 19:19:20,016 - rio - DEBUG - C9 and MOUZ have both fought EG
+2022-11-09 19:19:20,016 - rio - DEBUG - C9 won against EG
+2022-11-09 19:19:20,016 - rio - DEBUG - MOUZ won against EG
+2022-11-09 19:19:20,016 - rio - DEBUG - C9 and MOUZ have both fought NAVI
+2022-11-09 19:19:20,016 - rio - DEBUG - C9 won against NAVI
+2022-11-09 19:19:20,016 - rio - DEBUG - MOUZ lost against NAVI
+2022-11-09 19:19:20,016 - rio - DEBUG - C9 and MOUZ have both fought FNATIC
+2022-11-09 19:19:20,016 - rio - DEBUG - C9 lost against FNATIC
+2022-11-09 19:19:20,016 - rio - DEBUG - MOUZ won against FNATIC
+2022-11-09 19:19:20,016 - rio - DEBUG - Common foe wins: {'C9': 1, 'MOUZ': 1}
+2022-11-09 19:19:20,017 - rio - DEBUG - Prediction will be based off of elo difference (C9: 1379, MOUZ: 1361)
+2022-11-09 19:19:20,017 - rio - INFO - Winner is C9!
+2022-11-09 19:19:20,017 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,017 - rio - INFO - ---------------------------- ROUND 1: FURIA vs NAVI ----------------------------
+2022-11-09 19:19:20,017 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,018 - rio - INFO - FURIA [Wins: 9 / 11 | 81.82%] [Net Wins: 7] [Elo: 1378]
+2022-11-09 19:19:20,018 - rio - INFO - NAVI [Wins: 6 / 8 | 75.00%] [Net Wins: 4] [Elo: 1271]
+2022-11-09 19:19:20,018 - rio - DEBUG - Looking out who would win out of FURIA and NAVI...
+2022-11-09 19:19:20,018 - rio - DEBUG - Prediction will be based off of winrate difference (FURIA: 81.82, NAVI: 75.00)
+2022-11-09 19:19:20,018 - rio - INFO - Winner is FURIA!
+2022-11-09 19:19:20,018 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,018 - rio - INFO - -------------------------- ROUND 1: HEROIC vs SPIRIT ---------------------------
+2022-11-09 19:19:20,018 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,018 - rio - INFO - HEROIC [Wins: 8 / 10 | 80.00%] [Net Wins: 6] [Elo: 1368]
+2022-11-09 19:19:20,019 - rio - INFO - SPIRIT [Wins: 7 / 10 | 70.00%] [Net Wins: 4] [Elo: 1325]
+2022-11-09 19:19:20,019 - rio - DEBUG - Looking out who would win out of HEROIC and SPIRIT...
+2022-11-09 19:19:20,019 - rio - DEBUG - Prediction will be based off of winrate difference (HEROIC: 80.00, SPIRIT: 70.00)
+2022-11-09 19:19:20,019 - rio - INFO - Winner is HEROIC!
+2022-11-09 19:19:20,019 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,019 - rio - INFO - ------------------------- ROUND 1: OUTSIDERS vs FNATIC -------------------------
+2022-11-09 19:19:20,019 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,019 - rio - INFO - OUTSIDERS [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1418]
+2022-11-09 19:19:20,020 - rio - INFO - FNATIC [Wins: 9 / 14 | 64.29%] [Net Wins: 4] [Elo: 1372]
+2022-11-09 19:19:20,020 - rio - DEBUG - Looking out who would win out of OUTSIDERS and FNATIC...
+2022-11-09 19:19:20,020 - rio - DEBUG - OUTSIDERS and FNATIC have already fought one another
+2022-11-09 19:19:20,020 - rio - INFO - Winner is OUTSIDERS!
+2022-11-09 19:19:20,020 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,020 - rio - INFO - =================================== ROUND 2 ====================================
+2022-11-09 19:19:20,020 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,020 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,021 - rio - INFO - --------------------------- ROUND 2: C9 vs OUTSIDERS ---------------------------
+2022-11-09 19:19:20,021 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,021 - rio - INFO - C9 [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1379]
+2022-11-09 19:19:20,021 - rio - INFO - OUTSIDERS [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1418]
+2022-11-09 19:19:20,021 - rio - DEBUG - Looking out who would win out of C9 and OUTSIDERS...
+2022-11-09 19:19:20,021 - rio - DEBUG - C9 and OUTSIDERS have both fought NAVI
+2022-11-09 19:19:20,021 - rio - DEBUG - C9 won against NAVI
+2022-11-09 19:19:20,022 - rio - DEBUG - OUTSIDERS lost against NAVI
+2022-11-09 19:19:20,022 - rio - DEBUG - C9 and OUTSIDERS have both fought HEROIC
+2022-11-09 19:19:20,022 - rio - DEBUG - C9 won against HEROIC
+2022-11-09 19:19:20,022 - rio - DEBUG - OUTSIDERS tied against HEROIC
+2022-11-09 19:19:20,022 - rio - DEBUG - C9 and OUTSIDERS have both fought NIP
+2022-11-09 19:19:20,022 - rio - DEBUG - C9 lost against NIP
+2022-11-09 19:19:20,022 - rio - DEBUG - OUTSIDERS won against NIP
+2022-11-09 19:19:20,022 - rio - DEBUG - C9 and OUTSIDERS have both fought SPIRIT
+2022-11-09 19:19:20,022 - rio - DEBUG - C9 lost against SPIRIT
+2022-11-09 19:19:20,023 - rio - DEBUG - OUTSIDERS won against SPIRIT
+2022-11-09 19:19:20,023 - rio - DEBUG - C9 and OUTSIDERS have both fought FNATIC
+2022-11-09 19:19:20,023 - rio - DEBUG - C9 lost against FNATIC
+2022-11-09 19:19:20,023 - rio - DEBUG - OUTSIDERS won against FNATIC
+2022-11-09 19:19:20,023 - rio - DEBUG - Common foe wins: {'C9': -1, 'OUTSIDERS': 2}
+2022-11-09 19:19:20,023 - rio - INFO - Winner is OUTSIDERS!
+2022-11-09 19:19:20,023 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,023 - rio - INFO - --------------------------- ROUND 2: FURIA vs HEROIC ---------------------------
+2022-11-09 19:19:20,023 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,023 - rio - INFO - FURIA [Wins: 9 / 11 | 81.82%] [Net Wins: 7] [Elo: 1378]
+2022-11-09 19:19:20,023 - rio - INFO - HEROIC [Wins: 8 / 10 | 80.00%] [Net Wins: 6] [Elo: 1368]
+2022-11-09 19:19:20,024 - rio - DEBUG - Looking out who would win out of FURIA and HEROIC...
+2022-11-09 19:19:20,024 - rio - DEBUG - Prediction will be based off of winrate difference (FURIA: 81.82, HEROIC: 80.00)
+2022-11-09 19:19:20,024 - rio - INFO - Winner is FURIA!
+2022-11-09 19:19:20,024 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,024 - rio - INFO - =================================== ROUND 3 ====================================
+2022-11-09 19:19:20,024 - rio - INFO - ================================================================================
+2022-11-09 19:19:20,024 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,024 - rio - INFO - ------------------------- ROUND 3: OUTSIDERS vs FURIA --------------------------
+2022-11-09 19:19:20,024 - rio - INFO - --------------------------------------------------------------------------------
+2022-11-09 19:19:20,024 - rio - INFO - OUTSIDERS [Wins: 9 / 13 | 69.23%] [Net Wins: 5] [Elo: 1418]
+2022-11-09 19:19:20,024 - rio - INFO - FURIA [Wins: 9 / 11 | 81.82%] [Net Wins: 7] [Elo: 1378]
+2022-11-09 19:19:20,024 - rio - DEBUG - Looking out who would win out of OUTSIDERS and FURIA...
+2022-11-09 19:19:20,025 - rio - DEBUG - Prediction will be based off of winrate difference (OUTSIDERS: 69.23, FURIA: 81.82)
+2022-11-09 19:19:20,025 - rio - INFO - Winner is FURIA!
