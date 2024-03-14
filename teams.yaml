@@ -1,0 +1,67 @@
+Europe:
+  base_elo: 1000
+  teams:
+    - FaZe
+    - VP
+    - NAVI
+    - G2
+    - EF
+    - AMKAL
+    - BetBoom
+    - 3DMAX
+    - 9Pandas
+    - SAW
+    - KOI
+    - ITB
+    - NIP
+    - ENTERPRISE
+    - Fnatic
+    - Falcons
+    - Vitality
+    - Mouz
+    - Spirit
+    - Monte
+    - C9
+    - Apeks
+    - Astralis
+    - Preasy
+    - GL
+    - Guild.E
+    - ENCE
+    - ECSTATIC
+    - Pera
+    - OG
+    - Nexus
+    - HEROIC
+
+Americas:
+  base_elo: 700
+  teams:
+    - FURIA: 800
+    - MIBR
+    - M80
+    - paiN
+    - RED
+    - BESTIA
+    - Imperial
+    - Nouns
+    - Elevate
+    - BOSS
+    - ODDIK
+    - Legacy
+    - Wildcard
+    - Liquid
+    - NRG
+    - COL
+
+Asia:
+  base_elo: 600
+  teams:
+    - The MongolZ: 815
+    - Lynn Vision Gaming
+    - TYLOO
+    - Grayhound Gaming
+    - ATOX Esports
+    - JiJieHao
+    - Twisted Minds
+    - Myth Avenue

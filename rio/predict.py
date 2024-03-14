@@ -13,7 +13,7 @@ def predict(team_a: Team, team_b: Team) -> Team | None:
         )
         return team_a if team_a.compare(team_b) > 0 else team_b
 
-    if not team_a.win_rate == team_b.win_rate:
+    if not team_a.win_rate == team_b.win_rate and team_a.region == team_b.region:
         logger.debug(f"Prediction will be based off of winrate difference ({team_a.name}: {team_a.win_rate:.2f}, {team_b.name}: {team_b.win_rate:.2f})")
         return team_a if team_a.win_rate > team_b.win_rate else team_b
 

@@ -1,12 +1,38 @@
 from __future__ import annotations
 from copy import deepcopy
-from typing import List
+from typing import List, Tuple
+
+from yaml import safe_load
 
 from .logger import logger
 
 
 LOW_ELO_MULTIPLER = 0.2
 HIGH_ELO_MULTIPLIER = 1
+
+
+with open("./teams.yaml", "r") as yaml_file:
+    TEAM_ELOS = safe_load(yaml_file)
+
+def get_team_region(team_name: str) -> Tuple[str, int]:
+    for region_name, region in TEAM_ELOS.items():
+        if team_name in [
+            team.upper()
+            
+            for team in region["teams"]
+            if isinstance(team, str)
+        ]:
+            elo = region["base_elo"]
+            # logger.debug(f"{team_name} from {region_name} (setting starting elo to {elo})")
+            return region_name, elo
+        
+        for dict_team in [team for team in region["teams"] if isinstance(team, dict)]:
+            for name in dict_team.keys():
+                if name.upper() == team_name:
+                    elo = dict_team[name]
+                    logger.debug(f"{team_name} from {region_name} (setting starting elo to {elo})")
+                    return region_name, elo
+    return "Unknown", 1000
 
 
 class Team:
@@ -16,12 +42,12 @@ class Team:
         self._losses = {}
         self._net = None
         self._net_cached = False
-        self.elo = 1000
+        self.region, self.elo = get_team_region(team_name=name)
         self._win_count = 0
         self._matches = 0
 
     def __str__(self) -> str:
-        return f"{self.name} [Wins: {self.wins} / {self._matches} | {self.win_rate:.2f}%] [Net Wins: {self.total}] [Elo: {self.elo}]"
+        return f"{self.name} ({self.region}) [Wins: {self.wins} / {self._matches} | {self.win_rate:.2f}%] [Net Wins: {self.total}] [Elo: {self.elo}]"
 
     def __eq__(self, other: Team) -> bool:
         return self.name == other.name

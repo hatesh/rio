@@ -21,7 +21,7 @@ class CustomFormatter(logging.Formatter):
     bold_red = "\x1b[31;1m"
     reset = "\x1b[0m"
     format = (
-        "Haboosh IEM RIO 22 Predict %(levelname)s %(message)s"
+        "Haboosh CS MAJOR Predict %(levelname)s %(message)s"
     )
     formatter = logging.Formatter(format)
 
