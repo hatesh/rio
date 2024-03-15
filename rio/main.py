@@ -25,11 +25,29 @@ def load_matches(file: Path = Path("./rio.csv")) -> List[dict]:
 
 def process_matches(matches: list) -> Teams:
     teams = Teams()
+    last_stage = None
     for match in matches:
-        teams.add(team_name=match["Team A"], stage=match["Stage"])
-        teams.add(team_name=match["Team B"], stage=match["Stage"])
+        stage = match['Stage']
+        if stage != last_stage:
+            if last_stage is not None:
+                print_teams_summary(teams=teams)
+            print_block(logger.info, f" {stage} ", char="*")
+            last_stage = stage
+        team_a_name = match["Team A"]
+        team_b_name = match["Team B"]
+        logger.debug(f"Processing {stage}:{match['Round']} | {team_a_name} vs {team_b_name}")
+        teams.add(team_name=match["Team A"], stage=stage)
+        teams.add(team_name=match["Team B"], stage=stage)
         teams.get(match["Winner"]).record_win(teams.get(match["Loser"]))
+        logger.debug(teams.get(team_name=team_a_name))
+        logger.debug(teams.get(team_name=team_b_name))
     return teams
+
+
+def print_teams_summary(teams: Teams):
+    print_block(logger.info, " TEAM SUMMARY ", char="-")
+    for team in teams.teams.values():
+        logger.info(team)
 
 
 def print_block(print_function: Callable, message: str, char: str = "=", length: int = 100):

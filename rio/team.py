@@ -14,23 +14,22 @@ HIGH_ELO_MULTIPLIER = 1
 with open("./teams.yaml", "r") as yaml_file:
     TEAM_ELOS = safe_load(yaml_file)
 
+
 def get_team_region(team_name: str) -> Tuple[str, int]:
     for region_name, region in TEAM_ELOS.items():
         if team_name in [
-            team.upper()
-            
-            for team in region["teams"]
-            if isinstance(team, str)
+            team.upper() for team in region["teams"] if isinstance(team, str)
         ]:
             elo = region["base_elo"]
-            # logger.debug(f"{team_name} from {region_name} (setting starting elo to {elo})")
             return region_name, elo
-        
+
         for dict_team in [team for team in region["teams"] if isinstance(team, dict)]:
             for name in dict_team.keys():
                 if name.upper() == team_name:
                     elo = dict_team[name]
-                    logger.debug(f"{team_name} from {region_name} (setting starting elo to {elo})")
+                    logger.debug(
+                        f"{team_name} from {region_name} (setting starting elo to {elo})"
+                    )
                     return region_name, elo
     return "Unknown", 1000
 
@@ -105,6 +104,7 @@ class Team:
         return self.net.get(other_team_name, 0)
 
     def record_win(self, other_team: Team):
+        logger.info(f"Recording win for {self.name} against {other_team.name}")
         if other_team.name not in self.won.keys():
             self._wins[other_team.name] = 0
         self._wins[other_team.name] += 1
@@ -121,10 +121,14 @@ class Team:
             return 0.1 * self.elo
 
         if won:
-            skill_multiplier = LOW_ELO_MULTIPLER if self.elo > other_team.elo else HIGH_ELO_MULTIPLIER
+            skill_multiplier = (
+                LOW_ELO_MULTIPLER if self.elo > other_team.elo else HIGH_ELO_MULTIPLIER
+            )
         else:
-            skill_multiplier = HIGH_ELO_MULTIPLIER if self.elo > other_team.elo else LOW_ELO_MULTIPLER
-        
+            skill_multiplier = (
+                HIGH_ELO_MULTIPLIER if self.elo > other_team.elo else LOW_ELO_MULTIPLER
+            )
+
         delta = abs(self.elo - other_team.elo)
         return skill_multiplier * delta
 
