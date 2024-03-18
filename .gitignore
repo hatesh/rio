@@ -1,3 +1,10 @@
+# Outputs
+*.txt
+*.log
+
+# Excel (for data entry)
+*.xlsx
+
 # Editors
 .vscode/
 .idea/
