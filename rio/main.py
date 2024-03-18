@@ -41,12 +41,20 @@ def process_matches(matches: list) -> Teams:
         teams.get(match["Winner"]).record_win(teams.get(match["Loser"]))
         logger.debug(teams.get(team_name=team_a_name))
         logger.debug(teams.get(team_name=team_b_name))
+    print_teams_summary(teams=teams)
     return teams
 
 
 def print_teams_summary(teams: Teams):
     print_block(logger.info, " TEAM SUMMARY ", char="-")
-    for team in teams.teams.values():
+    teams = [
+        team for team in teams.teams.values()
+        if "loser" not in team.region.lower()
+    ]
+
+    teams.sort(key= lambda team: team.elo, reverse=True)
+
+    for team in teams:
         logger.info(team)
 
 
@@ -60,6 +68,8 @@ def main():
     matches = load_matches(file=Path("./cop.csv"))
     teams = process_matches(matches)
     major = load_major()
+
+    summaries = []
 
     for team in teams.legends:
         logger.debug(f"{team}")
@@ -79,7 +89,11 @@ def main():
                 print_block(logger.info, f"Winner is {winner.name}!", char=" ")
                 loser = team_b if team_a == winner else team_a
                 winner.record_win(loser)
+                summaries.append(f"{stage_name}: {round} | {team_a.name} VS {team_b.name} = {winner.name}")
 
+    print_block(logger.info, " SUMMARY ", char="*")
+    for summary in summaries:
+        logger.info(summary)
 
 if __name__ == "__main__":
     main()

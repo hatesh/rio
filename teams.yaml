@@ -34,31 +34,32 @@ Europe:
     - Nexus
     - HEROIC
     - Rebels Gaming
+    - BIG
 
 Americas:
   base_elo: 700
   teams:
-    - FURIA: 800
+    - FURIA: 900
     - MIBR
-    - M80
+    - M80: 500
     - paiN
     - RED
     - BESTIA
     - Imperial
-    - Nouns
-    - Elevate
-    - BOSS
-    - ODDIK
+    - Nouns: 500
+    - Elevate: 500
+    - BOSS: 500
+    - ODDIK: 500
     - Legacy
     - Wildcard
     - Liquid
-    - NRG
+    - NRG: 500
     - COL
 
 Asia:
-  base_elo: 600
+  base_elo: 500
   teams:
-    - The MongolZ: 815
+    - The MongolZ: 800
     - Lynn Vision Gaming
     - TYLOO
     - Grayhound Gaming
@@ -66,3 +67,13 @@ Asia:
     - JiJieHao
     - Twisted Minds
     - Myth Avenue
+
+Loser:
+  base_elo: 500
+  teams:
+    - ABT
+    - Agency
+    - FTW
+    - AL-QATRAO
+    - Rhyno
+    - OVERFRAG

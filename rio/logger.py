@@ -1,4 +1,5 @@
 import logging
+from pathlib import Path
 
 
 class CustomFormatter(logging.Formatter):
@@ -35,6 +36,16 @@ class CustomFormatter(logging.Formatter):
 
 logger = logging.getLogger(__package__)
 logger.setLevel(logging.DEBUG)
+
+# create file handler which logs even debug messages
+log_file = Path.cwd() / "cop.log"
+
+if log_file.exists():
+    log_file.unlink()
+
+fh = logging.FileHandler(filename=str(log_file))
+fh.setLevel(logging.DEBUG)
+logger.addHandler(fh)
 
 # create console handler with a higher log level
 console_handler = logging.StreamHandler()
