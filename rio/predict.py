@@ -23,12 +23,12 @@ def predict(team_a: Team, team_b: Team) -> Team | None:
         compare_a = team_a.compare(common_foe)
         common_vs[team_a.name] += compare_a
         logger.debug(
-            f"{team_a.name} {'won' if compare_a > 0 else 'lost' if compare_a < 0 else 'tied'} against {common_foe}"
+            f"{team_a.name} {'won' if compare_a > 0 else 'lost' if compare_a < 0 else 'tied'} {abs(compare_a)} against {common_foe}"
         )
         compare_b = team_b.compare(common_foe)
         common_vs[team_b.name] += team_b.compare(common_foe)
         logger.debug(
-            f"{team_b.name} {'won' if compare_b > 0 else 'lost' if compare_b < 0 else 'tied'} against {common_foe}"
+            f"{team_b.name} {'won' if compare_b > 0 else 'lost' if compare_b < 0 else 'tied'} {abs(compare_a)} against {common_foe}"
         )
     logger.debug(f"Common foe wins: {common_vs}")
     # If they aren't neutral, we can use this as a decider
