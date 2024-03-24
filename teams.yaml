@@ -1,10 +1,10 @@
 Europe:
   base_elo: 1000
   teams:
-    - FaZe
+    - FaZe: 1100
     - VP
-    - NAVI
-    - G2
+    - NAVI: 1100
+    - G2: 1200
     - EF
     - AMKAL
     - BetBoom
@@ -18,8 +18,8 @@ Europe:
     - Fnatic
     - Falcons
     - Vitality
-    - Mouz
-    - Spirit
+    - Mouz: 1100
+    - Spirit: 1200
     - Monte
     - C9
     - Apeks
@@ -54,7 +54,7 @@ Americas:
     - Wildcard
     - Liquid
     - NRG: 500
-    - COL
+    - COL: 1000
 
 Asia:
   base_elo: 500

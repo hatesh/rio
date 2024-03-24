@@ -8,7 +8,7 @@ from .logger import logger
 
 
 LOW_ELO_MULTIPLER = 0.2
-HIGH_ELO_MULTIPLIER = 1
+HIGH_ELO_MULTIPLIER = 0.6
 
 
 with open("./teams.yaml", "r") as yaml_file:
